@@ -14,4 +14,4 @@ RUN dotnet restore
 
 # Add the rest of my source files.
 COPY . .
-RUN dotnet publish --output /out --configuration Release
+RUN dotnet publish --output /out -c Release
