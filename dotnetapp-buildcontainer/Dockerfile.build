@@ -1,0 +1,17 @@
+FROM microsoft/dotnet:1.0.0-preview2-sdk
+
+# Set my working directory to where I want to build my app
+WORKDIR /app
+
+# Adding the project.json and restoring as their own layers allows Docker 
+# to cache the results. Meaning that you will only do a NuGet restore when
+# the project.json changes or you move to a new machine.
+# NOTE: It is important to have the .dockerignore file to ignore project.lock.json when doing this.
+# Whilst it generally doesn't cause any problems it is possible that stomping on your project.lock.json
+# with one from a different machine and restore would cause some issues.
+COPY project.json .
+RUN dotnet restore
+
+# Add the rest of my source files.
+COPY . .
+RUN dotnet publish --output /out --configuration Release
