@@ -16,14 +16,15 @@ if ($plat -eq "win") {
 }
 else {
     $rid = "debian.8-x64"
+    $tagSuffix = ""
 }
 
 pushd $PSScriptRoot
 
-Get-ChildItem -Recurse -Filter $dockerfileName | sort DirectoryName | foreach {
+Get-ChildItem -Recurse -Filter $dockerfileName | foreach {
     pushd $_.DirectoryName
 
-    $tag = "$($dockerRepo):" + $_.DirectoryName.Replace($PSScriptRoot, '').TrimStart('\').Replace('\', '-') + $tagSuffix
+    $tag = "$($dockerRepo):" + $_.DirectoryName.Replace($PSScriptRoot, '').TrimStart('\').TrimStart('/').Replace('\', '-').Replace('/', '-') + $tagSuffix
     Write-Host "--- Building $($_.DirectoryName)\$dockerfileName to produce $tag ---"
 
     if (($_.DirectoryName.EndsWith("prod")) -or ($_.DirectoryName.EndsWith("selfcontained"))) {
