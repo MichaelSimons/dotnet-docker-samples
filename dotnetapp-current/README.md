@@ -39,5 +39,3 @@ dotnet publish -c Release -o out
 docker build -t dotnetapp -f Dockerfile.nano .
 docker run dotnetapp Hello .NET Core from Docker
 ```
-Notes
------
