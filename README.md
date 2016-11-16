@@ -28,7 +28,6 @@ The following samples show different ways to use .NET Core images.
 
 - [dotnetapp-dev](dotnetapp-dev) - This sample is good for development and building since it relies on the .NET Core SDK image. It performs `dotnet` commands on your behalf, reducing the time it takes to create Docker images (assuming you make changes and then test them in a container, iteratively).
 
-
 ### Production
 
 - [dotnetapp-prod](dotnetapp-prod) - This sample is good for production since it relies on the .NET Core Runtime image, not the larger .NET Core SDK image. Most apps only need the runtime, reducing the size of your application image.
