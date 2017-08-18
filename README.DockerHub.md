@@ -1,7 +1,14 @@
-# Supported tags and respective `Dockerfile` links
+# Supported Windows amd64 tags
 
-- [`dotnetapp`, `latest` (*dotnetapp/Dockerfile*)](https://github.com/dotnet/dotnet-docker-samples/blob/dockerhub/dotnetapp/Dockerfile)
-- [`dotnetapp-nanoserver` (*dotnetapp/Dockerfile.nano*)](https://github.com/dotnet/dotnet-docker-samples/blob/dockerhub/dotnetapp/Dockerfile.nano)
+- [`dotnetapp-nanoserver`, `dotnetapp`, `latest` (*dotnetapp/Dockerfile*)](https://github.com/dotnet/dotnet-docker-samples/blob/dockerhub/dotnetapp/Dockerfile)
+
+# Supported Linux amd64 tags
+
+- [`dotnetapp-stretch`, `dotnetapp`, `latest` (*dotnetapp/Dockerfile*)](https://github.com/dotnet/dotnet-docker-samples/blob/dockerhub/dotnetapp/Dockerfile)
+
+# Supported Linux arm32 tags
+
+- [`dotnetapp-stretch-arm32v7`, `dotnetapp`, `latest` (*dotnetapp/Dockerfile.arm32*)](https://github.com/dotnet/dotnet-docker-samples/blob/dockerhub/dotnetapp/Dockerfile.arm32)
 
 For more information about these images and their history, please see [the relevant Dockerfile (`dotnet/dotnet-docker-samples`)](https://github.com/dotnet/dotnet-docker-samples/search?utf8=%E2%9C%93&q=FROM&type=Code). These images are updated via [pull requests to the `dotnet/dotnet-docker-samples` GitHub repo](https://github.com/dotnet/dotnet-docker-samples/pulls?utf8=%E2%9C%93&q=).
 
