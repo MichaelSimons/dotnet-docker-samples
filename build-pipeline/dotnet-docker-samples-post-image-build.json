@@ -163,8 +163,8 @@
     },
     "PB.docker.password": {
       "value": null,
-      "isSecret": true,
-      "allowOverride": true
+      "allowOverride": true,
+      "isSecret": true
     },
     "PB.docker.username": {
       "value": null,
