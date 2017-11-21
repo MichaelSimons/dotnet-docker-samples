@@ -54,8 +54,7 @@ The following samples show different ways to use .NET Core images.
 
 * [.NET Core Docker Alpine Production Sample](dotnetapp-prod-alpine-preview) - This sample illustrates how to use the new lightweight Alpine based .NET Core Runtime image that is currently in preview.
 
->**TODO**
-* Related: See [.NET Core Alpine Image](https://gist.github.com/richlander/9529644df6df25e902682aee7f5c0846)
+* Related: See [.NET Core Alpine Docker Image announcement](https://github.com/dotnet/dotnet-docker-nightly/issues/500)
 
 ## Related Repositories
 

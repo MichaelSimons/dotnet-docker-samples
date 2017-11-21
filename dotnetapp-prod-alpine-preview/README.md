@@ -1,6 +1,6 @@
 # .NET Core Docker Alpine Production Sample (Preview)
 
-This .NET Core Docker sample demonstrates a best practice pattern for building Alpine based Docker images for .NET Core apps for production. The primary goal of Alpine is very small deployments.  Images can be pulled quicker and will have a smaller attack surface area.  The .NET Core Alpine Docker images are currently in preview. See the [.NET Core Alpine Docker Image announcement](https://gist.github.com/richlander/9529644df6df25e902682aee7f5c0846) for additional details.
+This .NET Core Docker sample demonstrates a best practice pattern for building Alpine based Docker images for .NET Core apps for production. The primary goal of Alpine is very small deployments.  Images can be pulled quicker and will have a smaller attack surface area.  The .NET Core Alpine Docker images are currently in preview. See the [.NET Core Alpine Docker Image announcement](https://github.com/dotnet/dotnet-docker-nightly/issues/500) for additional details.
 
 The [sample Dockerfile](Dockerfile) creates an .NET Core application Docker image based off of the [.NET Core Runtime Alpine Preview Docker image](https://hub.docker.com/r/microsoft/dotnet-nightly/).
 
@@ -23,7 +23,7 @@ You can build and run the sample in Docker using the following commands. The ins
 ```console
 cd dotnetapp-prod-alpine-preview
 docker build -t dotnetapp-prod-alpine-preview .
-docker run --rm dotnetapp-prod-alpine-previewHello .NET Core from Docker
+docker run --rm dotnetapp-prod-alpine-preview Hello .NET Core from Docker
 ```
 
 Note: The instructions above work only with Linux containers.
@@ -37,7 +37,7 @@ You can build and run the sample in Docker using the following commands. The ins
 ```console
 cd dotnetapp-prod-alpine-preview
 docker build -t dotnetapp-prod-alpine-preview -f Dockerfile.globalization .
-docker run --rm dotnetapp-prod-alpine-previewHello .NET Core from Docker
+docker run --rm dotnetapp-prod-alpine-preview Hello .NET Core from Docker
 ```
 
 Note: The instructions above work only with Linux containers.
